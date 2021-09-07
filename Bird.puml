@@ -1,0 +1,34 @@
+@startuml
+
+interface DanceImpl
+DanceImpl : void spin();
+DanceImpl : void doTheCaterpillar();
+DanceImpl : void jump();
+
+
+abstract class Bird
+DanceImpl <|.. Bird
+Bird : + String name
+Bird : + String color
+Bird : + abstract void speak()
+Bird : + void fly()
+Bird : + void spin()
+Bird : + void doTheCaterpillar()
+Bird : + void jump()
+
+class Parrot
+Bird <|-- Parrot
+Parrot : + void speak()
+
+class Penguin
+Bird <|-- Penguin
+Penguin : + void speak()
+Penguin : + void fly()
+
+class Pigeon
+Bird <|-- Pigeon
+Pigeon : + void eatPizza()
+Pigeon : + void speak()
+Pigeon : + void sleep()
+
+@enduml
