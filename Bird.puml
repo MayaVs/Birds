@@ -19,6 +19,15 @@ Bird : + void jump()
 class Parrot
 Bird <|-- Parrot
 Parrot : + void speak()
+Parrot : + void type()
+
+class Lovebirds
+Parrot <|-- Lovebirds
+Lovebirds : + void type
+
+class Macaw
+Parrot <|-- Macaw
+Macaw : + void type
 
 class Penguin
 Bird <|-- Penguin

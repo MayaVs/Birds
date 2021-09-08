@@ -23,5 +23,14 @@ public class Main {
 
         Parrot parr = new Parrot("Jago", "Red");
         parr.speak();
+        parr.type();
+
+        Lovebirds lovebirds = new Lovebirds("Sisi", "green");
+        lovebirds.type();
+        lovebirds.speak();
+
+        Macaw macaw = new Macaw("Koko", "red");
+        macaw.type();
+        macaw.speak();
     }
 }

@@ -10,4 +10,8 @@ public class Parrot extends Bird {
     public void speak() {
         System.out.println("Yo! I'm " + name + " and I'm a " + color + " parrot.");
     }
+
+    public void type() {
+        System.out.println("There are many types of parrots");
+    }
 }

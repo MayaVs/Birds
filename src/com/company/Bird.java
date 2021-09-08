@@ -8,6 +8,7 @@ public abstract class Bird implements DanceImpl {
     public Bird(String name, String color) {
         this.name = name;
         this.color = color;
+        System.out.println("--------------------------");
         System.out.println("I'm a bird");
     }
 
