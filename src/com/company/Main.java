@@ -3,8 +3,6 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("main");
-
         Pigeon pippa = new Pigeon("Pippa", "Grey");
         pippa.speak();
         pippa.fly();
@@ -32,5 +30,6 @@ public class Main {
         Macaw macaw = new Macaw("Koko", "red");
         macaw.type();
         macaw.speak();
+        macaw.jump();
     }
 }

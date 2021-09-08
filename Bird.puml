@@ -8,36 +8,36 @@ DanceImpl : void jump();
 
 abstract class Bird
 DanceImpl <|.. Bird
-Bird : + String name
-Bird : + String color
-Bird : + abstract void speak()
-Bird : + void fly()
-Bird : + void spin()
-Bird : + void doTheCaterpillar()
-Bird : + void jump()
+Bird : + name:String
+Bird : + color:String
+Bird : + {abstract} speak():void
+Bird : + fly():void
+Bird : + spin():void
+Bird : + doTheCaterpillar():void
+Bird : + jump():void
 
 class Parrot
 Bird <|-- Parrot
-Parrot : + void speak()
-Parrot : + void type()
+Parrot : + speak():void
+Parrot : + type():void
 
 class Lovebirds
 Parrot <|-- Lovebirds
-Lovebirds : + void type
+Lovebirds : + type():void
 
 class Macaw
 Parrot <|-- Macaw
-Macaw : + void type
+Macaw : + type():void
 
 class Penguin
 Bird <|-- Penguin
-Penguin : + void speak()
-Penguin : + void fly()
+Penguin : + speak():void
+Penguin : + fly():void
 
 class Pigeon
 Bird <|-- Pigeon
-Pigeon : + void eatPizza()
-Pigeon : + void speak()
-Pigeon : + void sleep()
+Pigeon : + eatPizza():void
+Pigeon : + speak():void
+Pigeon : + sleep():void
 
 @enduml
